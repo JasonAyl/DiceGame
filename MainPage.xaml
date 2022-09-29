@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="26"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                x:Name="diceim"
+                Source="sixdie.svg"
+                SemanticProperties.Description="Click the button to roll the die!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Roll the dice app!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="36"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Press the button to roll the dice."
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="RollBtn"
+                Text="Roll"
+                SemanticProperties.Hint="Activates the roll function"
+                Clicked="OnCounterClicked" 
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
